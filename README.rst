@@ -32,6 +32,7 @@ export LC_ALL="C"
 locale
 ```
 
+
 Then, pull the fork:
 
 ```
@@ -39,7 +40,7 @@ nextflow pull JamesHowie14/vsn-pipelines -r master
 ls -l ~/.nextflow/assets/JamesHowie14/vsn-pipelines
 ```
 
-# Make Config
+Make Config
 
 ```
 nextflow config ccasar/vsn-pipelines \
