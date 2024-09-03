@@ -9,7 +9,7 @@ I noticed that the repository has been archived. Unfortunately, the most recent 
 
 Therefore, I produced a fork that can run the scenic module of this VSN-pipeline in both single-run and multi-run modes.
 
-To do this, I borrowed two fixes from the `ccasar/vsn-pipelines` fork. These allow the VSN-pipeline to run in single-run mode if `skipReports = true` in the config.  
+To do this, I borrowed two fixes from the ``ccasar/vsn-pipelines`` fork. These allow the VSN-pipeline to run in single-run mode if ``skipReports = true`` in the config.  
 To allow the multi-run aggregation to function, I made one further tweak.
 
 These are small changes but can be tricky to come across and should save time for people who want to automatically use SCENIC multi-run mode with aggregation.
@@ -23,29 +23,31 @@ To run, produce an environment and install the following:
 - **Singularity:** 3.8.6
 - **Nextflow:** 21.04.03 (crucial)
 
-Then, export:
+Then, export, checking before and after:
 
-```
-locale
-export LANG="C"
-export LC_ALL="C"
-locale
-```
+.. code-block:: bash
+
+   locale
+   export LANG="C"
+   export LC_ALL="C"
+   locale
 
 
 Then, pull the fork:
 
-```
-nextflow pull JamesHowie14/vsn-pipelines -r master
-ls -l ~/.nextflow/assets/JamesHowie14/vsn-pipelines
-```
+.. code-block:: bash
 
-Make Config
+   nextflow pull JamesHowie14/vsn-pipelines -r master
+   ls -l ~/.nextflow/assets/JamesHowie14/vsn-pipelines
 
-```
-nextflow config ccasar/vsn-pipelines \
-   -profile scenic,scenic_multiruns,scenic_use_cistarget_motifs,scenic_use_cistarget_tracks,hg38,singularity > nf_CPUopt-Real-MultiRun.config
-```
+
+Make Config:
+
+.. code-block:: bash
+
+   nextflow config JamesHowie14/vsn-pipelines \
+      -profile scenic,scenic_multiruns,scenic_use_cistarget_motifs,scenic_use_cistarget_tracks,hg38,singularity > nf_CPUopt-Real-MultiRun.config
+
 
 Then, edit the config:
 # container = 'aertslab/pyscenic_scanpy:0.12.1_1.9.1' #crucial
@@ -54,9 +56,8 @@ Then, edit the config:
 
 Then, run via:
 
-```
-nextflow -C nf_CPUopt-Real-MultiRun.config run JamesHowie/vsn-pipelines -entry scenic -r master
-```
+.. code-block:: bash
+   nextflow -C nf_CPUopt-Real-MultiRun.config run JamesHowie/vsn-pipelines -entry scenic -r master 
 
 
 This should allow you to run the VSN-pipeline implementation of pySCENIC for the single-run and crucially also the multip-run mode, with aggregation. 
