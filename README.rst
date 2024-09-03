@@ -51,16 +51,16 @@ Make Config:
 
 Then, edit the config:
 
-``container = 'aertslab/pyscenic_scanpy:0.12.1_1.9.1' #crucial``
+``container = 'aertslab/pyscenic_scanpy:0.12.1_1.9.1'  #crucial``
 
-``skipReports = true                                  #crucial, for up-to-date feather files for the motifs/tracks``
+``skipReports = true   #crucial, for up-to-date feather files for the motifs/tracks``
 
 
 Then, run via:
 
 .. code-block:: bash
 
-   nextflow -C nf_CPUopt-Real-MultiRun.config run JamesHowie/vsn-pipelines -entry scenic -r master 
+   nextflow -C nf_CPUopt-Real-MultiRun.config run JamesHowie14/vsn-pipelines -entry scenic -r master 
 
 
 This should allow you to run the VSN-pipeline implementation of pySCENIC for the single-run and crucially also the multip-run mode, with aggregation. 
