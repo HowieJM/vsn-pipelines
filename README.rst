@@ -25,7 +25,7 @@ To run, produce an environment and install the following:
 
 Then, export:
 
-```bash
+```
 locale
 export LANG="C"
 export LC_ALL="C"
@@ -34,14 +34,14 @@ locale
 
 Then, pull the fork:
 
-```bash
+```
 nextflow pull JamesHowie14/vsn-pipelines -r master
 ls -l ~/.nextflow/assets/JamesHowie14/vsn-pipelines
 ```
 
 # Make Config
 
-```bash
+```
 nextflow config ccasar/vsn-pipelines \
    -profile scenic,scenic_multiruns,scenic_use_cistarget_motifs,scenic_use_cistarget_tracks,hg38,singularity > nf_CPUopt-Real-MultiRun.config
 ```
@@ -53,7 +53,7 @@ Then, edit the config:
 
 Then, run via:
 
-```bash
+```
 nextflow -C nf_CPUopt-Real-MultiRun.config run JamesHowie/vsn-pipelines -entry scenic -r master
 ```
 
