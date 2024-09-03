@@ -66,6 +66,8 @@ Then, run via:
 This should allow you to run the VSN-pipeline implementation of pySCENIC for the single-run and crucially also the multip-run mode, with aggregation. 
 
 
+**Note** -- scenic reports fail, hence skipped. To make this work requires and edit of ``vsn-pipelines/src/scenic/bin/reports/scenic_report.ipynb``. Have have not looked at this, but see ccasar/vsn-pipelines fork for one attempt to fix this.
+
 # **JMH - Sept, 3rd, 2024** 
 
 
