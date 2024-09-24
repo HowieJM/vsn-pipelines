@@ -37,15 +37,15 @@ Then, pull the fork:
 
 .. code-block:: bash
 
-   nextflow pull JamesHowie14/vsn-pipelines -r master
-   ls -l ~/.nextflow/assets/JamesHowie14/vsn-pipelines
+   nextflow pull HowieJM/vsn-pipelines -r master
+   ls -l ~/.nextflow/assets/HowieJM/vsn-pipelines
 
 
 Make Config:
 
 .. code-block:: bash
 
-   nextflow config JamesHowie14/vsn-pipelines \
+   nextflow config HowieJM/vsn-pipelines \
       -profile scenic,scenic_multiruns,scenic_use_cistarget_motifs,scenic_use_cistarget_tracks,hg38,singularity > nf_CPUopt-Real-MultiRun.config
 
 
