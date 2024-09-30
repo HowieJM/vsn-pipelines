@@ -5,7 +5,7 @@ VSN-Pipelines
 
 # **Fork Notes:**
 
-I noticed that the repository has been archived. Unfortunately, the most recent version does not run with the most up-to-date motif files. Therefore, I produced a fork that can run the scenic module of this VSN-pipeline in both single-run and multi-run modes. To do this, I borrowed two fixes from the ``ccasar/vsn-pipelines`` fork. These allow the VSN-pipeline to run in single-run mode if ``skipReports = true`` in the config. To allow the multi-run aggregation to function, I made one further tweak. These are small changes but can be tricky to ID. Hopefully they will save time for people who want to use SCENIC multi-run mode with aggregation. I've also noted key setup options.
+I noticed that the repository has been archived. Unfortunately, the most recent version does not run with the most up-to-date motif files. Therefore, I produced a fork that can run the scenic module of this VSN-pipeline in both single-run and multi-run modes. To do this, I borrowed two fixes from the ``ccasar/vsn-pipelines`` fork. These allow the VSN-pipeline to run in single-run mode if ``skipReports = true`` in the config. To allow the multi-run aggregation to function, I made one further tweak. These are small changes but can be tricky to ID. Hopefully they will save time for people who want to use SCENIC multi-run mode with aggregation. I've noted key setup options.
 
 ---
 
