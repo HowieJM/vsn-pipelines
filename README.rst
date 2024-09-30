@@ -5,14 +5,7 @@ VSN-Pipelines
 
 # **Fork Notes:**
 
-I noticed that the repository has been archived. Unfortunately, the most recent version does not run with the most up-to-date motif files.
-
-Therefore, I produced a fork that can run the scenic module of this VSN-pipeline in both single-run and multi-run modes.
-
-To do this, I borrowed two fixes from the ``ccasar/vsn-pipelines`` fork. These allow the VSN-pipeline to run in single-run mode if ``skipReports = true`` in the config.  
-To allow the multi-run aggregation to function, I made one further tweak.
-
-These are small changes but can be tricky to come across and should save time for people who want to automatically use SCENIC multi-run mode with aggregation.
+I noticed that the repository has been archived. Unfortunately, the most recent version does not run with the most up-to-date motif files. Therefore, I produced a fork that can run the scenic module of this VSN-pipeline in both single-run and multi-run modes. To do this, I borrowed two fixes from the ``ccasar/vsn-pipelines`` fork. These allow the VSN-pipeline to run in single-run mode if ``skipReports = true`` in the config. To allow the multi-run aggregation to function, I made one further tweak. These are small changes but can be tricky to ID. Hopefully they will save time for people who want to use SCENIC multi-run mode with aggregation. I've also noted key setup options.
 
 ---
 
@@ -23,7 +16,7 @@ To run, produce an environment and install the following:
 - **Singularity:** 3.8.6
 - **Nextflow:** 21.04.03 (crucial)
 
-Then, export, checking before and after:
+Then export these variables, checking before and after:
 
 .. code-block:: bash
 
@@ -33,7 +26,7 @@ Then, export, checking before and after:
    locale
 
 
-Then, pull the fork:
+After this, pull the fork:
 
 .. code-block:: bash
 
@@ -41,7 +34,7 @@ Then, pull the fork:
    ls -l ~/.nextflow/assets/HowieJM/vsn-pipelines
 
 
-Make Config:
+Make the Config file:
 
 .. code-block:: bash
 
@@ -49,26 +42,32 @@ Make Config:
       -profile scenic,scenic_multiruns,scenic_use_cistarget_motifs,scenic_use_cistarget_tracks,hg38,singularity > nf_CPUopt-Real-MultiRun.config
 
 
-Then, edit the config:
+Then edit the config:
 
-``container = 'aertslab/pyscenic_scanpy:0.12.0_1.9.1'  #crucial note -> you can run with 0.12.1_1.9.1 but in Linux this can lead to low multicore rates, using 0.12.0 allows full use``
+.. code-block:: bash
 
-``skipReports = true   #crucial, for up-to-date feather files for the motifs/tracks``
+   container = 'aertslab/pyscenic_scanpy:0.12.0_1.9.1'  #crucial note -> you can run with 0.12.1_1.9.1 but in Linux this can lead to low multicore rates, using 0.12.0 allows full use
+   skipReports = true   #crucial, for up-to-date feather files for the motifs/tracks
 
 
-Then, run via:
+Run the pipeline:
 
 .. code-block:: bash
 
    nextflow -C nf_CPUopt-Real-MultiRun.config run HowieJM/vsn-pipelines -entry scenic -r master 
 
 
-This should allow you to run the VSN-pipeline implementation of pySCENIC for the single-run and crucially also the multip-run mode, with aggregation. 
+This should allow you to run the VSN-pipeline implementation of pySCENIC in single-run mode or in multiple-run mode with aggregation. 
 
 
-**Note** -- scenic reports fail, hence skipped. To make this work requires and edit of ``vsn-pipelines/src/scenic/bin/reports/scenic_report.ipynb``. Have have not looked at this, but see ccasar/vsn-pipelines fork for one attempt to fix this.
+# **Further Notes:** 
 
-# **JMH - Sept, 3rd, 2024 [+edits 30 Sept 2024] ** 
+If ``skipReports=false`` the run will fail. 
+
+To re-introduce these reports would require at least edits to ``vsn-pipelines/src/scenic/bin/reports/scenic_report.ipynb``. 
+I have not looked at this. But, if interested, have a look at ccasar/vsn-pipelines fork for one attempt to fix this. Here, we simply set to ``true``.
+
+# **JMH, Sept, 3rd, 2024 [+edits 30 Sept 2024]** 
 
 
 ##
