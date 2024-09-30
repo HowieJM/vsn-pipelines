@@ -57,7 +57,7 @@ Run the pipeline:
    nextflow -C nf_CPUopt-Real-MultiRun.config run HowieJM/vsn-pipelines -entry scenic -r master 
 
 
-This should allow you to run the VSN-pipeline implementation of pySCENIC in single-run mode or in multiple-run mode with aggregation. 
+You can now run the VSN-pipeline implementation of pySCENIC in single-run mode or in multiple-run mode with aggregation. 
 
 
 # **Further Notes:** 
