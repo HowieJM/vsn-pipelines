@@ -51,7 +51,7 @@ Make Config:
 
 Then, edit the config:
 
-``container = 'aertslab/pyscenic_scanpy:0.12.0_1.9.1'  #crucial note -> you can run with 0.12.1_1.9.1 but in Linux this can lead to low multicore rates, using 0.12.0 allows full use of the cores``
+``container = 'aertslab/pyscenic_scanpy:0.12.0_1.9.1'  #crucial note -> you can run with 0.12.1_1.9.1 but in Linux this can lead to low multicore rates, using 0.12.0 allows full use``
 
 ``skipReports = true   #crucial, for up-to-date feather files for the motifs/tracks``
 
