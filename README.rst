@@ -60,7 +60,7 @@ Then, run via:
 
 .. code-block:: bash
 
-   nextflow -C nf_CPUopt-Real-MultiRun.config run JamesHowie14/vsn-pipelines -entry scenic -r master 
+   nextflow -C nf_CPUopt-Real-MultiRun.config run HowieJM/vsn-pipelines -entry scenic -r master 
 
 
 This should allow you to run the VSN-pipeline implementation of pySCENIC for the single-run and crucially also the multip-run mode, with aggregation. 
