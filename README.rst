@@ -62,9 +62,7 @@ This should allow you to run the VSN-pipeline implementation of pySCENIC in sing
 
 # **Further Notes:** 
 
-If ``skipReports=false`` the run will fail. 
-
-To re-introduce these reports would require at least edits to ``vsn-pipelines/src/scenic/bin/reports/scenic_report.ipynb``. 
+If ``skipReports=false`` the run will fail. To re-introduce these reports would require at least edits to ``vsn-pipelines/src/scenic/bin/reports/scenic_report.ipynb``. 
 I have not looked at this. But, if interested, have a look at ccasar/vsn-pipelines fork for one attempt to fix this. Here, we simply set to ``true``.
 
 # **JMH, Sept, 3rd, 2024 [+edits 30 Sept 2024]** 
