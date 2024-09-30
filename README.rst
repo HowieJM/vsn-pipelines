@@ -51,7 +51,7 @@ Make Config:
 
 Then, edit the config:
 
-``container = 'aertslab/pyscenic_scanpy:0.12.1_1.9.1'  #crucial``
+``container = 'aertslab/pyscenic_scanpy:0.12.0_1.9.1'  #crucial, and note -> you can run with 0.12.1_1.9.1 but in Linux this can lead to low multicore rates, using 0.12.0 allows full use of the cores``
 
 ``skipReports = true   #crucial, for up-to-date feather files for the motifs/tracks``
 
@@ -68,7 +68,7 @@ This should allow you to run the VSN-pipeline implementation of pySCENIC for the
 
 **Note** -- scenic reports fail, hence skipped. To make this work requires and edit of ``vsn-pipelines/src/scenic/bin/reports/scenic_report.ipynb``. Have have not looked at this, but see ccasar/vsn-pipelines fork for one attempt to fix this.
 
-# **JMH - Sept, 3rd, 2024** 
+# **JMH - Sept, 3rd, 2024 [+edits 30 Sept 2024] ** 
 
 
 ##
