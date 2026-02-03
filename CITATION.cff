@@ -1,0 +1,21 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it as below."
+
+title: "vsn-pipelines: SCENIC multirun workflows optimised for parallel execution with updated motif resources"
+
+authors:
+  - family-names: Howie
+    given-names: James Malcolm
+
+version: 1.0.0
+
+repository-code: "https://github.com/HowieJM/vsn-pipelines"
+
+keywords:
+  - SCENIC
+  - gene regulatory networks
+  - single-cell RNA-seq
+  - Nextflow
+  - workflow pipelines
+
+license: MIT
