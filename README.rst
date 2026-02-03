@@ -1,6 +1,4 @@
-.. image:: https://zenodo.org/badge/18470755.svg
-   :target: https://doi.org/10.5281/zenodo.18470755
-   :alt: DOI
+|ZenodoFork|
 
 VSN-Pipelines
 =============
@@ -300,4 +298,8 @@ See `here <https://vsn-pipelines.readthedocs.io/en/latest/scatac-seq.html>`_ for
 .. |mnncorrect| image:: https://github.com/vib-singlecell-nf/vsn-pipelines/workflows/mnncorrect/badge.svg
     :target: https://vsn-pipelines.readthedocs.io/en/latest/pipelines.html#mnncorrect-mnncorrect
     :alt: MNN-correct Pipeline
+
+.. |ZenodoFork| image:: https://zenodo.org/badge/18470755.svg
+   :target: https://doi.org/10.5281/zenodo.18470755
+   :alt: Zenodo DOI
 
