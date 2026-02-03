@@ -1,7 +1,7 @@
+|ZenodoFork|
+
 VSN-Pipelines
 =============
-
-|ZenodoFork|
 
 ## 2024-09-03
 
@@ -299,11 +299,8 @@ See `here <https://vsn-pipelines.readthedocs.io/en/latest/scatac-seq.html>`_ for
     :target: https://vsn-pipelines.readthedocs.io/en/latest/pipelines.html#mnncorrect-mnncorrect
     :alt: MNN-correct Pipeline
 
-.. |ZenodoFork| image:: https://zenodo.org/badge/18470755.svg
+.. |ZenodoFork| image:: https://zenodo.org/badge/DOI/10.5281/zenodo.18470755.svg
     :target: https://doi.org/10.5281/zenodo.18470755
-    :alt: ZenodoFork
+    :alt: Zenodo DOI (fork)
 
-.. |Zenodo| image:: https://zenodo.org/badge/199477571.svg
-    :target: https://zenodo.org/badge/latestdoi/199477571
-    :alt: Zenodo
 
