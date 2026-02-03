@@ -1,4 +1,6 @@
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18470755.svg)](https://doi.org/10.5281/zenodo.18470755)
+.. image:: https://zenodo.org/badge/18470755.svg
+   :target: https://doi.org/10.5281/zenodo.18470755
+   :alt: DOI
 
 VSN-Pipelines
 =============
