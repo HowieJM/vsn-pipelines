@@ -300,6 +300,6 @@ See `here <https://vsn-pipelines.readthedocs.io/en/latest/scatac-seq.html>`_ for
     :alt: MNN-correct Pipeline
 
 .. |ZenodoFork| image:: https://zenodo.org/badge/18470755.svg
-   :target: https://doi.org/10.5281/zenodo.18470755
-   :alt: Zenodo DOI (fork)
+    :target: https://doi.org/10.5281/zenodo.18470755
+    :alt: Zenodo DOI (fork)
 
