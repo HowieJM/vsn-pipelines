@@ -7,7 +7,7 @@ VSN-Pipelines
 
 # **Fork Notes:**
 
-**This fork contains minimal but critical changes enabling SCENIC multirun aggregation with modern cisTarget motif resources and efficient parallel execution.**
+**This fork contains minimal but critical changes enabling SCENIC multirun aggregation with modern cisTarget motif resources (v10) and efficient parallel execution.**
 
 
 I noticed that the repository has been archived. Unfortunately, the most recent version does not run with the most up-to-date motif files. Therefore, I produced a fork that can run the scenic module of this VSN-pipeline in both single-run and multi-run modes. To do this, I borrowed two fixes from the ``ccasar/vsn-pipelines`` fork. These allow the VSN-pipeline to run in single-run mode if ``skipReports = true`` in the config. To allow the multi-run aggregation to function, I made one further tweak. These are small changes but can be tricky to ID. Hopefully they will save time for people who want to use SCENIC multi-run mode with aggregation. I've noted key setup options.
@@ -32,6 +32,7 @@ To run, produce an environment and install the following:
 
 - **Singularity:** 3.8.6
 - **Nextflow:** 21.04.03 (crucial)
+- **pySCENIC:** 0.12.0 (via aertslab/pyscenic_scanpy:0.12.0_1.9.1) 
 
 Then export these variables, checking before and after:
 
@@ -63,7 +64,7 @@ Then edit the config:
 
 .. code-block:: bash
 
-   container = 'aertslab/pyscenic_scanpy:0.12.0_1.9.1'  #crucial note -> you can run with 0.12.1_1.9.1 but in Linux this can lead to low multicore rates, using 0.12.0 allows full use
+   container = 'aertslab/pyscenic_scanpy:0.12.0_1.9.1'  #crucial note -> you can run with 0.12.1_1.9.1 but in Linux this can lead to reduced multicore utilisation, using 0.12.0 allows full use
    skipReports = true   #crucial, for up-to-date feather files for the motifs/tracks
 
 
