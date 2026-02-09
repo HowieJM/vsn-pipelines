@@ -7,6 +7,9 @@ VSN-Pipelines
 
 # **Fork Notes:**
 
+**This fork contains minimal but critical changes enabling SCENIC multirun aggregation with modern cisTarget motif resources and efficient parallel execution.**
+
+
 I noticed that the repository has been archived. Unfortunately, the most recent version does not run with the most up-to-date motif files. Therefore, I produced a fork that can run the scenic module of this VSN-pipeline in both single-run and multi-run modes. To do this, I borrowed two fixes from the ``ccasar/vsn-pipelines`` fork. These allow the VSN-pipeline to run in single-run mode if ``skipReports = true`` in the config. To allow the multi-run aggregation to function, I made one further tweak. These are small changes but can be tricky to ID. Hopefully they will save time for people who want to use SCENIC multi-run mode with aggregation. I've noted key setup options.
 
 ---
@@ -15,8 +18,8 @@ I noticed that the repository has been archived. Unfortunately, the most recent 
 
 If you use this fork of the VSN-pipelines to run SCENIC (single-run or multirun with aggregation), please cite:
 
-- **This software** (Zenodo archive):  
-  https://doi.org/10.5281/zenodo.18470755
+Howie, J. M. (2026). *vsn-pipelines: SCENIC multirun workflows optimised for parallel execution with updated motif resources* (v1.0.0). Zenodo. https://doi.org/10.5281/zenodo.18470755
+
 Formatted citations (BibTeX, APA, etc.) are available via the Zenodo record and GitHub’s “Cite this repository”.
 
 In addition, please also cite the original SCENIC methodology and relevant upstream resources, as appropriate.
