@@ -22,7 +22,7 @@ Howie, J. M. (2026). *vsn-pipelines: SCENIC multirun workflows optimised for par
 
 Formatted citations (BibTeX, APA, etc.) are available via the Zenodo record and GitHub’s “Cite this repository”.
 
-In addition, *please also cite the original SCENIC methodology* and relevant upstream resources, as appropriate.
+In addition, **please also cite the original SCENIC methodology** and relevant upstream resources, as appropriate.
 
 ---
 
