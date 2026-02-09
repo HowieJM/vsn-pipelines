@@ -59,7 +59,7 @@ Make the Config file:
       -profile scenic,scenic_multiruns,scenic_use_cistarget_motifs,scenic_use_cistarget_tracks,hg38,singularity > nf_CPUopt-Real-MultiRun.config
 
 
-Then edit the config, running - **pySCENIC:** 0.12.0 (via aertslab/pyscenic_scanpy:0.12.0_1.9.1):
+Then edit the config, to use - **pySCENIC:** 0.12.0:
 
 .. code-block:: bash
 
