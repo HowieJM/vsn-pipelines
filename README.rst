@@ -32,7 +32,6 @@ To run, produce an environment and install the following:
 
 - **Singularity:** 3.8.6
 - **Nextflow:** 21.04.03 (crucial)
-- **pySCENIC:** 0.12.0 (via aertslab/pyscenic_scanpy:0.12.0_1.9.1) 
 
 Then export these variables, checking before and after:
 
